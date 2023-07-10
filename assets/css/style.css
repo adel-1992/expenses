@@ -1,0 +1,248 @@
+/*************************************
+# ***** Start Public             *****
+*************************************/
+:root {
+  --background-page: #F8F8F8;
+  --box-shadow:-12px -12px 15px snow,
+    10px 10px 50px 8px #4d5d8838;
+  --box-shadow-2:-2px -2px 5px white,
+    3px 3px 5px #39395368;
+  /*--color:#5f5454;
+  --color-main:#03a9f4;*/
+  --color:rgb(110,123,251);
+}
+.button{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+table thead th{
+  background:rgb(110,123,251) !important;
+  color: white !important;
+}
+.center {
+  text-align: center;
+}
+.color{
+  color: var(--color);
+}
+.background{
+  background: var(--color);
+}
+.to-top{
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  background: var(--color);
+  color: white;
+  box-shadow: 0 0 5px #eee;
+}
+body{
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F8F8F8; /*var(--background-page);*/
+}
+/*************************************
+# ***** End Public               *****
+# ************************************
+# ***** Start Navbar             *****
+*************************************/
+.navebar {
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  /*background: var(--color);
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0); */
+  background-image: linear-gradient(109.6deg, rgb(154,183,248) 11.2%, rgba(110,123,251,1) 91.1% );
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  /*box-shadow: 0 0 20px #e0e0e0;*/
+}
+.navebar .navbar-toggle-icon{
+  display: none;
+}
+.navebar ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navebar ul .close-menu{
+  display: none;
+}
+.navebar ul li{
+  float: right;
+  padding: 0 15px;
+}
+.navebar ul li:first-child {
+  margin-right: 20px;
+}
+.navebar ul a{
+  color: #fff;
+}
+.navebar ul a:hover {
+  color: #149ddd;
+}
+.navebar ul li:hover{
+  background: white;
+}
+/*************************************
+# ***** End Navbar               *****
+# ************************************
+# ***** Start Slider Show        *****
+*************************************/
+.slider-show{
+  width: 100%;
+  height: 50vh;
+  /* aspect-ratio: 16/16; */
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-size: 100% 58%;
+  background-attachment: fixed;
+}
+/*************************************
+# ***** End Slider Show          *****
+# ************************************
+# ***** Start About              *****
+*************************************/
+.title-item span{
+  padding: 0 0 10px 0;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color);
+  text-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.content-item h1{
+  float: right;
+  padding: 15px 0;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color);
+}
+.clear-float {
+  clear: both;
+}
+.content-item p{
+  text-align: right;
+  margin-top: 10px;
+}
+/*************************************
+# ***** End About                *****
+# ************************************
+# ***** Start Contact Us         *****
+*************************************/
+.control-form {
+  width: 100%;
+  margin: 0 auto;
+  padding:20px 30px 0 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.whatsapp {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  /*box-shadow: 0 0 5px #efefef;*/
+}
+.whatsapp {
+  width: 30px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+}
+.btn-wp{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transport;
+}
+.wp-button{
+  width: 200px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+.control-form .form-group {
+  padding-bottom: 15px;
+}
+.control-form label {
+  padding-bottom: 8px;
+}
+.control-form input,
+.control-form select {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+.control-form input {
+  height: 44px;
+}
+.control-form textarea {
+  padding: 10px 15px;
+}
+.control-form .mybutton {
+  background-color: rgb(110,123,251);
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.control-form button[type=submit]:hover {
+  background: #37b3ed;
+  outline:none;
+ }
+/*************************************
+# ***** End Contact Us           *****
+# ************************************
+# ***** Start Form Add           *****
+*************************************/
+.home .page-home{
+  width: 100%;
+  height: 100vh;
+  margin-top: 60px;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+}
+.home .page-home .form1{
+  width: 350px;
+  background: #fff;
+  margin: 0 auto;
+  border-top: 3px solid var(--color);
+  border-radius: 3px;
+  padding:20px 15px;
+}
+/*************************************
+# ***** End Form Add             *****
+# ************************************
+# ***** Start Footer             *****
+*************************************/
+.footer{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #4d5d8838;
+  text-align: center;
+}
+/*************************************
+# ***** End Footer               *****
+# ************************************
+# ***** Start *****
+*************************************/
