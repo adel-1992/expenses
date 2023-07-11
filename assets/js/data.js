@@ -1,3 +1,4 @@
+"use strict";
 function set_data(name,data){
   localStorage.setItem(name,data);
 }
@@ -16,7 +17,9 @@ function get_data(data){
     if (cn.val() !== "" && rn.val() !== "" && at.val() !== "" && cd.val() !== "" ) {
       event.preventDefault();
       var total_a_e = Number(at.val()) + Number($("#expo").text());
-      if(cn.val() == "مصروفات" && total_a_e <= Number($("#impo").text())){
+      if(cn.val() == "مصروفات" && total_a_e > Number($("#impo").text())){
+        swal("! تنبيه", "الإيرادات غير كافية", "warning");
+      }else{
         dataArray.push({"categoey_name":cn.val(),"reason":rn.val(),"amount":at.val(),"cat_date":cd.val() });
         if( get_data( "database") === 'undefined'){
           set_data( "database" , JSON.stringify(dataArray) );
@@ -42,8 +45,6 @@ function get_data(data){
           confirmButtonText: 'Ok!'
         });
         show();
-      }else{
-        swal("! تنبيه", "الإيرادات غير كافية", "warning");
       }
     }
   });
@@ -185,7 +186,7 @@ function get_data(data){
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Outlay.db';
+    link.download = 'Expenses.db';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

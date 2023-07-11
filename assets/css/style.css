@@ -221,13 +221,8 @@ body{
   align-items: center;
   */
 }
-.home .page-home .form1{
-  width: 350px;
-  background: #fff;
+.form-center{
   margin: 0 auto;
-  border-top: 3px solid var(--color);
-  border-radius: 3px;
-  padding:20px 15px;
 }
 /*************************************
 # ***** End Form Add             *****
